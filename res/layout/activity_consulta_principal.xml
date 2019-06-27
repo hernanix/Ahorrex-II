@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConsultaPrincipal" >
+
+    <Button
+        android:id="@+id/b3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:onClick="detalle"
+        android:text="Detalle" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b3"
+        android:layout_alignParentLeft="true"
+        android:onClick="nuevoGasto"
+        android:text="Nuevo Gasto" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b2"
+        android:layout_alignParentLeft="true"
+        android:onClick="nuevoIngreso"
+        android:text="Nuevo Ingreso" />
+
+    <TextView
+        android:id="@+id/tvFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="18dp"
+        android:text="Fecha Actual" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSaldo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:text="Ingresos" />
+
+    <TextView
+        android:id="@+id/tvIngresos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_centerHorizontal="true"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvGastos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"
+        android:layout_centerHorizontal="true"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tvSaldo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvFecha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvTarjeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv3"
+        android:layout_centerHorizontal="true"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvGastos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Tarjeta de Credito" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvIngresos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Gastos" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvSaldo"
+        android:layout_alignBottom="@+id/tvSaldo"
+        android:layout_toLeftOf="@+id/tvSaldo"
+        android:text="$"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
